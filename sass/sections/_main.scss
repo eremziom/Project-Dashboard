@@ -1,0 +1,14 @@
+.main-page {
+  background-color: $color-bars;
+  margin: 10px;
+
+  .title-text {
+    font-family: $paragraph-font;
+    color: $color-text;
+    text-align: left;
+  }
+
+  .sections {
+    margin: 10px;
+  }
+}

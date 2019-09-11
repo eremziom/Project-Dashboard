@@ -5,10 +5,12 @@
 @import "layout";
 
 // Components
-//@import "components/;
+@import "components/hidden_wallet";
 
 // Sections
 @import "sections/top_menu";
+@import "sections/side_menu";
+@import "sections/main";
 
 // Pages / Views
 //@import "pages/registration";

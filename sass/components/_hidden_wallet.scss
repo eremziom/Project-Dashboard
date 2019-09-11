@@ -1,0 +1,21 @@
+.inner-wallet {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  margin: auto;
+  width: 100%;
+  right: 0;
+  display: none;
+
+  .wallet-elements {
+    flex: 3 0 0;
+    text-align: left;
+    font-size: $inner-wallet-font-size;
+  }
+
+  .wallet-numbers {
+    flex: 1 0 0;
+    text-align: right;
+    font-size: $inner-wallet-font-size;
+  }
+}

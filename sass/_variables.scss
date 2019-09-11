@@ -5,9 +5,11 @@
 
 //colors
 $color-sidebar: #333333;
+$color-sidebar-active: #535353;
 $color-text: #979797;
-$color-sidebar-active: #E3E3E3;
+$color-menu-active: #E3E3E3;
 $color-brand: #F5F5F2;
+$color-bars: white;
 $color-refresh: #F58220;
 $color-button: #FFA200;
 $color-dot: #04AE00;
@@ -22,45 +24,11 @@ $color-alert: #FF0000;
 $paragraph-font: 'Quicksand', sans-serif, Arial;
 $sidebar-font: 'Iceland', cursive, Arial;
 $user-font: 'Amatic SC', cursive, Arial;
+$logo-font: 'Gochi Hand', cursive, Arial;
 
 //font sizes
 $header-font-size: 20px;
 $paragraph-font-size: 16px;
 $sidebar-font-size: 14px;
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-
-  .side-container {
-    flex: 1 0 0;
-    background-color: $color-sidebar;
-    color: $color-text;
-    height: 100vh;
-  }
-
-  .main-container {
-    flex: 6 0 0;
-    background-color: $color-brand;
-    text-align: center;
-  }
-}
-
-//icons
-.icon {
-  color: $color-darksalmon;
-}
-
-/*@media (max-width: 767px) {
-  .service-wrapper {
-      flex-direction: column;
-  }
-  .work-box {
-      flex-direction: column;
-  }
-  .contact-data {
-      margin: 30px 0 0 0;
-  }
-}*/
+$inner-wallet-font-size: 12px;
+$logo-font-size: 25px;
