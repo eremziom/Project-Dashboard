@@ -365,8 +365,8 @@ template {
 
 .icon {
   color: #DE5252;
-  width: 15px;
-  height: 15px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 /*@media (max-width: 767px) {
@@ -430,26 +430,23 @@ template {
 .date-picker .date-wrapper {
   display: -ms-flexbox;
   display: flex;
-  margin: 0 20px;
+  margin: 0 10px;
   border: solid 1px #E3E3E3;
   -ms-flex-align: center;
       align-items: center;
 }
 
 .date-picker .date-wrapper .date {
+  margin: 10px 50px 10px 10px;
+  font-family: "Quicksand", sans-serif, Arial;
+}
+
+.date-picker .date-wrapper .date-icon {
   margin: 10px;
 }
 
-.date-picker .date-wrapper .date-ic {
-  margin: 0;
-}
-
-.date-picker .date-wrapper .dates {
-  margin: 0 30px 0 0;
-}
-
 .date-picker .refresh-wrapper {
-  margin: 0 20px;
+  margin: 0 10px;
   -ms-flex-align: center;
       align-items: center;
 }
@@ -460,16 +457,17 @@ template {
   border: none;
   padding: 10px 30px;
   font-family: "Amatic SC", cursive, Arial;
-  font-size: 25px;
   color: white;
 }
 
 .btn-add {
   background-color: #FFA200;
+  font-size: 25px;
 }
 
 .btn-refresh {
   background-color: #F58220;
+  padding: 10px;
 }
 
 .top-menu {
@@ -549,7 +547,7 @@ template {
 }
 
 .navbar-top .account .account-name {
-  padding-right: 20px;
+  padding-left: 10px;
   font-family: "Amatic SC", cursive, Arial;
   font-size: 16px;
 }
@@ -582,7 +580,7 @@ template {
 }
 
 .side-menu .full-menu .contact-title {
-  padding-left: 10px;
+  padding: 20px 0 20px 10px;
   font-family: "Quicksand", sans-serif, Arial;
   font-size: 16px;
 }
@@ -623,6 +621,7 @@ template {
   font-family: "Iceland", cursive, Arial;
   font-size: 16px;
   color: #56819F;
+  padding: 10px 0;
 }
 
 .side-menu .short-menu {
@@ -633,6 +632,7 @@ template {
 .side-menu .logo {
   font-size: 25px;
   text-align: center;
+  margin: 12px 0;
 }
 
 .side-menu .navbar-side {
@@ -644,6 +644,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding: 10px 0;
 }
 
 .side-menu .navbar-side .menu-element .menu-icon {

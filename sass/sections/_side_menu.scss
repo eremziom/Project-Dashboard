@@ -17,7 +17,7 @@
     }
 
     .contact-title {
-      padding-left: 10px;
+      padding: 20px 0 20px 10px;;
       font-family: $paragraph-font;
       font-size: $paragraph-font-size;
 
@@ -56,6 +56,7 @@
       font-family: $sidebar-font;
       font-size: $paragraph-font-size;
       color: $color-links;
+      padding: 10px 0;
     }
   }
 
@@ -67,6 +68,7 @@
   .logo {
     font-size: $logo-font-size;
     text-align: center;
+    margin: 12px 0;
   }
 
   .navbar-side {
@@ -76,6 +78,7 @@
     .menu-element {
       display: flex;
       width: 100%;
+      padding: 10px 0;
 
       .menu-icon {
         padding: 0 10px;
@@ -84,6 +87,7 @@
       .menu-label {
         font-family: $sidebar-font;
         font-size: $sidebar-font-size;
+
       }
     }
 

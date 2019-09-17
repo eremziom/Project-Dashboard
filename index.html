@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/glyphter.css">
+  <link rel="stylesheet" href="css/Glyphter.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
       .glyphter {
@@ -23,84 +23,57 @@
     <div class="side-container">
       <section id="side-bar" class="side-menu">
         <div class="full-menu">
-          <div class="brand-name logo">
-            <p>Just do it</p>
-          </div>
+          <div class="brand-name logo">Just do it</div>
           <ul class="navbar-side">
             <li class="menu-element">
-              <div class="menu-icon icon">
-                <p>IC</p>
+              <div class="menu-icon icon icon-general">
               </div>
-              <div class="menu-label">
-                <p>General</p>
-              </div>
+              <div class="menu-label">General</div>
             </li>
             <li class="menu-element">
-              <div class="menu-icon icon">
-                <p>IC</p>
+              <div class="menu-icon icon icon-details">
               </div>
-              <div class="menu-label">
-                <p>Details</p>
-              </div>
+              <div class="menu-label">Details</div>
             </li>
             <li class="menu-element">
-              <div class="menu-icon icon">
-                <p>IC</p>
+              <div class="menu-icon icon icon-links">
               </div>
-              <div class="menu-label">
-                <p>Links</p>
-              </div>
+              <div class="menu-label">Links</div>
             </li>
             <li class="menu-element">
-              <div class="menu-icon icon">
-                <p>IC</p>
+              <div class="menu-icon icon icon-banners">
               </div>
-              <div class="menu-label">
-                <p>Banners</p>
-              </div>
+              <div class="menu-label">Banners</div>
             </li>
             <li class="menu-element">
-              <div class="menu-icon icon">
-                <p>IC</p>
+              <div class="menu-icon icon icon-personaldata">
               </div>
-              <div class="menu-label">
-                <p>Personal data</p>
-              </div>
+              <div class="menu-label">Personal data</div>
             </li>
             <li class="menu-element">
-              <div class="menu-icon icon">
-                <p>IC</p>
+              <div class="menu-icon icon icon-payout">
               </div>
-              <div class="menu-label">
-                <p>Payout</p>
-              </div>
+              <div class="menu-label">Payout</div>
             </li>
             <li class="menu-element">
-              <div class="menu-icon icon">
-                <p>IC</p>
+              <div class="menu-icon icon icon-postback">
               </div>
-              <div class="menu-label">
-                <p>Postback</p>
-              </div>
+              <div class="menu-label">Postback</div>
             </li>
           </ul>
           <div class="contact">
-            <div class="contact-title">
-                <p>Your Manager</p>
-            </div>
+            <div class="contact-title">Your Manager</div>
             <div class="contact-wrapper">
               <div class="contact-image">
                 <img src="images/manager.png">
               </div>
-              <div class="contact-name">
-                <p>Mikhael E.</p>
-              </div>
+              <div class="contact-name">Mikhael E.</div>
             </div>
           </div>
         </div>
         <div class="short-menu">
           <div class="hamburger icon logo">
-            <p>H</p>
+            <i class="fas fa-bars"></i>
           </div>
         </div>
       </section>
@@ -109,22 +82,22 @@
       <section id="top-bar" class="top-menu">
         <ul class="navbar-top">
           <li class="top-elements">
-            <img class="icon" src="vendor/quit.svg">
+            <a href=# class="icon icon-quit"></a>
           </li>
           <li class="top-elements account">
-            <div class="account-name">
-              <a href="#" class="user-name">eremziom@hotmail.com</a>
-            </div>
             <div class="account-icon">
-              <a href="#" class="icon">AC</a>
+              <a href=# class="icon icon-profile"></a>
+            </div>
+            <div class="account-name">
+              <a href=# class="user-name">eremziom@hotmail.com</a>
             </div>
           </li>
           <li class="top-elements">
-            <a href="#" class="icon">DZ</a>
+            <a href=# class="icon icon-notification"></a>
           </li>
           <li class="top-elements wallet">
             <div class="icon wallet-icon">
-              <a href="#" class="icon">IC</a>
+              <a href=# class="icon icon-wallet"></a>
             </div>
             <div class="wallet-list">
               <div class="wallet-wrapper">
@@ -132,7 +105,7 @@
               </div>
             </div>
             <div class="icon wallet-icon">
-              <a href="#" class="icon">IC</a>
+              <a href="#" class="icon icon-arrow-down-small"></a>
             </div>
             <div class="inner-wallet">
                 <div class="wallet-elements">
@@ -174,15 +147,9 @@
           </div>
           <div class="date-picker">
             <div class="date-wrapper">
-              <div class="date-start date">
-                <p class ="dates">16.05.2016</p>
-              </div>
-              <div class="date-end date">
-                  <p class="dates">16.05.2016</p>
-              </div>
-              <div class="date-icon date icon">
-                <p class="date-ic">H</p>
-              </div>
+              <div class="date-start date">16.05.2016</div>
+              <div class="date-end date">16.05.2016</div>
+              <div class="date-icon date icon icon-calendar"></div>
             </div>
             <div class="refresh-wrapper">
               <button class="btn btn-refresh icon-refresh"></button>
@@ -254,8 +221,8 @@
                   <a href=#>www.homepage.com</a>
                 </div>
                 <div class="link-icons">
-                  <div class="links-icon icon hide-icon">X</div>
-                  <div class="del-icon icon hide-icon">D</div>
+                  <div class="links-icon icon hide-icon icon-links"></div>
+                  <div class="del-icon icon hide-icon icon-trash"></div>
                 </div>
               </div>
               <div class="links-rows">
@@ -264,8 +231,8 @@
                   <a href=#> www.currently.com</a>
                 </div>
                 <div class="link-icons">
-                  <div class="links-icon icon hide-icon">X</div>
-                  <div class="del-icon icon hide-icon">D</div>
+                  <div class="links-icon icon hide-icon icon-links"></div>
+                  <div class="del-icon icon hide-icon icon-trash"></div>
                 </div>
               </div>
               <div class="links-rows">
@@ -274,8 +241,8 @@
                   <a href=#>www.blurpix.com</a>
                 </div>
                 <div class="link-icons">
-                  <div class="links-icon icon hide-icon">X</div>
-                  <div class="del-icon icon hide-icon">D</div>
+                  <div class="links-icon icon hide-icon icon-links"></div>
+                  <div class="del-icon icon hide-icon icon-trash"></div>
                 </div>
               </div>
               <div class="links-rows">
@@ -284,8 +251,8 @@
                   <a href=#> www.your-site.com</a>
                 </div>
                 <div class="link-icons">
-                  <div class="links-icon icon hide-icon">X</div>
-                  <div class="del-icon icon hide-icon">D</div>
+                  <div class="links-icon icon hide-icon icon-links"></div>
+                  <div class="del-icon icon hide-icon icon-trash"></div>
                 </div>
               </div>
               <div class="links-rows">
@@ -294,8 +261,8 @@
                   <a href=#>www.google.com</a>
                 </div>
                 <div class="link-icons">
-                  <div class="links-icon icon hide-icon">X</div>
-                  <div class="del-icon icon hide-icon">D</div>
+                  <div class="links-icon icon hide-icon icon-links"></div>
+                  <div class="del-icon icon hide-icon icon-trash"></div>
                 </div>
               </div>
               <div class="links-rows">
@@ -304,8 +271,8 @@
                   <a href=#> www.facebook.com</a>
                 </div>
                 <div class="link-icons">
-                  <div class="links-icon icon hide-icon">X</div>
-                  <div class="del-icon icon hide-icon">D</div>
+                  <div class="links-icon icon hide-icon icon-links"></div>
+                  <div class="del-icon icon hide-icon icon-trash"></div>
                 </div>
               </div>
               <div class="links-rows">
@@ -314,8 +281,8 @@
                   <a href=#>www.dashboard.com</a>
                 </div>
                 <div class="link-icons">
-                  <div class="links-icon icon hide-icon">X</div>
-                  <div class="del-icon icon hide-icon">D</div>
+                  <div class="links-icon icon hide-icon icon-links"></div>
+                  <div class="del-icon icon hide-icon icon-trash"></div>
                 </div>
               </div>
               <div class="links-rows">
@@ -324,8 +291,8 @@
                   <a href=#>www.blurax.com</a>
                 </div>
                 <div class="link-icons">
-                  <div class="links-icon icon hide-icon">X</div>
-                  <div class="del-icon icon hide-icon">D</div>
+                  <div class="links-icon icon hide-icon icon-links"></div>
+                  <div class="del-icon icon hide-icon icon-trash"></div>
                 </div>
               </div>
               <div class="links-rows">
@@ -334,8 +301,8 @@
                   <a href=#>www.piece-of-wine.com</a>
                 </div>
                 <div class="link-icons">
-                  <div class="links-icon icon hide-icon">X</div>
-                  <div class="del-icon icon hide-icon">D</div>
+                  <div class="links-icon icon hide-icon icon-links"></div>
+                  <div class="del-icon icon hide-icon icon-trash"></div>
                 </div>
               </div>
               <div class="links-rows">
@@ -344,8 +311,8 @@
                   <a href=#> www.twitter.com</a>
                 </div>
                 <div class="link-icons">
-                  <div class="links-icon icon hide-icon">X</div>
-                  <div class="del-icon icon hide-icon">D</div>
+                  <div class="links-icon icon hide-icon icon-links"></div>
+                  <div class="del-icon icon hide-icon icon-trash"></div>
                 </div>
               </div>
             </div>
