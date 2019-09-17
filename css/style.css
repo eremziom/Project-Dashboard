@@ -365,6 +365,8 @@ template {
 
 .icon {
   color: #DE5252;
+  width: 15px;
+  height: 15px;
 }
 
 /*@media (max-width: 767px) {
