@@ -1,11 +1,14 @@
 .inner-wallet {
   display: flex;
   position: absolute;
-  top: 50px;
+  top: 48px;
   margin: auto;
   width: 100%;
   right: 0;
   display: none;
+  border: solid 1px $color-menu-active;
+  background-color: $color-bars;
+  padding: 5px;
 
   .wallet-elements {
     flex: 3 0 0;
@@ -17,5 +20,15 @@
     flex: 1 0 0;
     text-align: right;
     font-size: $inner-wallet-font-size;
+  }
+
+  .wallet-elem {
+    font-family: $paragraph-font;
+    color: $color-text;
+  }
+
+  .wallet-num {
+    font-family: $paragraph-font;
+    font-weight: 600;
   }
 }

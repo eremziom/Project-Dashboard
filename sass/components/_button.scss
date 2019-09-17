@@ -1,0 +1,17 @@
+.btn {
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  padding: 10px 30px;
+  font-family: $user-font;
+  font-size: 25px;
+  color: $color-bars;
+}
+
+.btn-add {
+  background-color: $color-button;
+}
+
+.btn-refresh {
+  background-color: $color-refresh;
+}

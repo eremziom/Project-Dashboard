@@ -1,14 +1,115 @@
-.main-page {
-  background-color: $color-bars;
-  margin: 10px;
 
-  .title-text {
-    font-family: $paragraph-font;
-    color: $color-text;
-    text-align: left;
+
+.title-text {
+  font-family: $paragraph-font;
+  color: $color-text;
+  text-align: left;
+  padding: 15px;
+  margin: auto;
+  border-bottom: solid 1px $color-menu-active;
+}
+
+.sections {
+  background-color: $color-bars;
+  margin: 15px;
+}
+
+.data-container {
+  width: 700px;
+  margin: auto;
+
+  .data-table {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
   }
 
-  .sections {
-    margin: 10px;
+  .earnings-table {
+    padding: 10px;
+
+    .earnings-img {
+      padding: 30px 0;
+    }
+  }
+
+  .table-rows {
+    display: flex;
+    margin: 0 20px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    width: 300px;
+    justify-content: space-between;
+    border-bottom: solid 1px $color-menu-active;
+  }
+
+  .earnings {
+    border: none;
+  }
+
+  .main-datas {
+    margin: 0;
+    font-family: $paragraph-font;
+  }
+
+  .names {
+    color: $color-text;
+  }
+}
+
+.button-wrapper {
+  padding: 30px;
+  border-bottom: solid 1px $color-menu-active;
+}
+
+.links-container {
+  display: block;
+
+  .links-rows {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px $color-menu-active;
+    padding: 15px;
+    align-items: center;
+
+
+    .link-name {
+      flex: 4 0 0;
+      text-align: left;
+      font-family: $paragraph-font;
+      color: $color-text;
+    }
+
+    .link-link {
+      flex: 4 0 0;
+      text-align: left;
+      font-family: $user-font;
+      color: $color-links;
+      font-size: 20px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .link-icons {
+      flex: 2 0 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .hide-icon {
+      opacity: 0;
+    }
+  }
+
+  .links-rows:hover {
+    background-color: $color-brand;
+    transition: background-color 0.3s;
+
+    .hide-icon {
+      opacity: 1;
+      transition: 0.3s;
+    }
   }
 }
