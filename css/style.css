@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.show {
+  visibility: hidden;
+}
+
 @media (max-width: 767px) {
   .data-table {
     -ms-flex-direction: column;
@@ -389,8 +393,8 @@ template {
 }
 
 .container .side-container {
-  -ms-flex: 1 1 0px;
-      flex: 1 1 0;
+  -ms-flex: 1 0 0px;
+      flex: 1 0 0;
 }
 
 .container .main-container {
@@ -525,6 +529,7 @@ template {
 
 .side-menu .full-menu {
   position: fixed;
+  top: 0;
   width: 160px;
 }
 

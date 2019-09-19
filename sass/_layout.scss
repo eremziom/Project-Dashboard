@@ -2,12 +2,11 @@
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
-  //justify-content: space-between;
+  //justify-content: center;
   //position: relative;
 
   .side-container {
-    flex: 1 1 0;
-
+    flex: 1 0 0;
   }
 
   .main-container {
@@ -15,6 +14,7 @@
     background-color: $color-brand;
     text-align: center;
     position: relative;
+
   }
 }
 
@@ -34,6 +34,7 @@
   margin: auto;
   border-bottom: solid 1px $color-menu-active;
 }
+
 
 /*@media (max-width: 767px) {
   .service-wrapper {
