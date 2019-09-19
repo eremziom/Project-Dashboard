@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+  /*.data-table {
+    flex-direction: column;
+  }*/
+
+  .top-menu {
+    display: none;
+  }
+
+  .full-menu {
+    display: none;
+  }
+
+  .short-menu {
+    display: block;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .data-container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .short-menu {
+    display: none;
+  }
+
+  .full-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -3,30 +3,29 @@
   display: flex;
   position: sticky;
   top: 0;
-  //width: 163px;
+  width: auto;
   background-color: $color-sidebar;
   color: $color-text;
-  height: 100vh;
+  height: 100%;
 
   .full-menu {
-    flex: 3 0 0;
+    width: 160px;
 
     .brand-name {
       font-family: $logo-font;
       color: $color-brand;
+      margin: 0;
     }
 
     .contact-title {
-      padding: 20px 0 20px 10px;;
+      padding: 20px 0 20px 10px;
       font-family: $paragraph-font;
       font-size: $paragraph-font-size;
-
     }
   }
 
   .contact-wrapper {
     display: flex;
-    justify-content: space-between;
 
     .contact-image {
       width: 40px;
@@ -56,13 +55,27 @@
       font-family: $sidebar-font;
       font-size: $paragraph-font-size;
       color: $color-links;
-      padding: 10px 0;
+      padding: 20px 0 10px 10px;
     }
   }
 
   .short-menu {
-    flex: 1 0 0;
-    //position: fixed;
+    //display: none;
+    width: 50px;
+    padding: 0 10px;
+    text-align: center;
+
+    .contact-image-short {
+      width: 30px;
+      height: 30px;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 
   .logo {

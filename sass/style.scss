@@ -1,18 +1,19 @@
 @import "variables";
 @import "mixins";
+@import "media";
 
 @import "normalize";
 @import "layout";
-
-// Components
-@import "components/hidden_wallet";
-@import "components/date_picker";
-@import "components/button";
 
 // Sections
 @import "sections/top_menu";
 @import "sections/side_menu";
 @import "sections/main";
+
+// Components
+@import "components/hidden_wallet";
+@import "components/date_picker";
+@import "components/button";
 
 // Pages / Views
 //@import "pages/registration";
