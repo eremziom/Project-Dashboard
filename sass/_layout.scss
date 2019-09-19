@@ -6,7 +6,7 @@
   //position: relative;
 
   .side-container {
-    flex: 1 0 0;
+    flex: 1 1 0;
 
   }
 
@@ -23,6 +23,16 @@
   color: $color-darksalmon;
   font-size: $paragraph-font-size;
   cursor: pointer;
+}
+
+//titles
+.title-text {
+  font-family: $paragraph-font;
+  color: $color-text;
+  text-align: left;
+  padding: 15px;
+  margin: auto;
+  border-bottom: solid 1px $color-menu-active;
 }
 
 /*@media (max-width: 767px) {

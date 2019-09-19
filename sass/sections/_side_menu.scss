@@ -1,20 +1,20 @@
 .side-menu {
   height: 100%;
   display: flex;
-  position: sticky;
   top: 0;
-  width: auto;
   background-color: $color-sidebar;
   color: $color-text;
-  height: 100%;
 
   .full-menu {
+    position: fixed;
     width: 160px;
 
     .brand-name {
       font-family: $logo-font;
       color: $color-brand;
       margin: 0;
+      display: flex;
+      justify-content: space-evenly;
     }
 
     .contact-title {
@@ -60,8 +60,7 @@
   }
 
   .short-menu {
-    //display: none;
-    width: 50px;
+    position: fixed;
     padding: 0 10px;
     text-align: center;
 
