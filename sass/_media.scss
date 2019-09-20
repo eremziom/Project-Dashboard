@@ -35,7 +35,8 @@
 
 @media (min-width: 768px) {
   .side-menu {
-    width: 160px;
+    width: auto;
+    min-width: 160px;
 
     .short-menu {
       display: none;

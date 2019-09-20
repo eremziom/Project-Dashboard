@@ -1,11 +1,25 @@
+.not-active {
+  display: none !important;
+}
+
 .active {
-  //display: none;
+  display: block !important;
+  opacity: 1;
+  transition: 1s;
 }
 
 .show {
   visibility: hidden;
 }
 
-.size {
+.size-fl {
   width: 160px !important;
+  transition: 0.5s;
+}
+
+.size-sr {
+  width: 50px !important;
+  transition: 0.2s;
+  margin: 0;
+  opacity: 1;
 }

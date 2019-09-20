@@ -2,12 +2,30 @@
   box-sizing: border-box;
 }
 
+.not-active {
+  display: none !important;
+}
+
+.active {
+  display: block !important;
+  opacity: 1;
+  transition: 1s;
+}
+
 .show {
   visibility: hidden;
 }
 
-.size {
+.size-fl {
   width: 160px !important;
+  transition: 0.5s;
+}
+
+.size-sr {
+  width: 50px !important;
+  transition: 0.2s;
+  margin: 0;
+  opacity: 1;
 }
 
 @media (max-width: 767px) {
@@ -43,7 +61,8 @@
 
 @media (min-width: 768px) {
   .side-menu {
-    width: 160px;
+    width: auto;
+    min-width: 160px;
   }
   .side-menu .short-menu {
     display: none;
@@ -528,7 +547,6 @@ template {
   height: 100%;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
   background-color: #333333;
   color: #979797;
 }
@@ -536,17 +554,17 @@ template {
 .side-menu .full-menu {
   position: fixed;
   top: 0;
-  width: 160px;
 }
 
 .side-menu .full-menu .brand-name {
   font-family: "Gochi Hand", cursive, Arial;
   color: #F5F5F2;
   margin: 0;
+  text-align: center;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .side-menu .full-menu .contact-title {
@@ -594,7 +612,7 @@ template {
 
 .side-menu .short-menu {
   position: fixed;
-  padding: 0 10px;
+  padding: 0 5px;
   text-align: center;
 }
 
@@ -602,6 +620,7 @@ template {
   width: 30px;
   height: 30px;
   position: relative;
+  left: 5px;
 }
 
 .side-menu .short-menu .contact-image-short img {
@@ -614,7 +633,7 @@ template {
 .side-menu .logo {
   font-size: 25px;
   text-align: center;
-  margin: 12px 0;
+  margin: 12px 9px;
 }
 
 .side-menu .navbar-side {
