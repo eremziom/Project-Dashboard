@@ -9,12 +9,15 @@
 
 .hide {
   visibility: hidden !important;
+  opacity: 0;
+  right: -160px;
 }
 
 .show {
   visibility: visible !important;
   opacity: 1 !important;
   transition: 0.5s !important;
+  left: 0 !important;
 }
 
 .size-fl {
@@ -26,5 +29,10 @@
   width: 50px !important;
   transition: 0.2s;
   margin: 0;
-
 }
+
+/*.cont-size-sr {
+  width: 50px !important;
+  transition: 1s;
+  margin: 0;
+}*/

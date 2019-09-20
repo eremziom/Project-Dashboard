@@ -13,12 +13,15 @@
 
 .hide {
   visibility: hidden !important;
+  opacity: 0;
+  right: -160px;
 }
 
 .show {
   visibility: visible !important;
   opacity: 1 !important;
   transition: 0.5s !important;
+  left: 0 !important;
 }
 
 .size-fl {
@@ -32,6 +35,11 @@
   margin: 0;
 }
 
+/*.cont-size-sr {
+  width: 50px !important;
+  transition: 1s;
+  margin: 0;
+}*/
 @media (max-width: 767px) {
   .data-table {
     -ms-flex-direction: column;
@@ -43,9 +51,12 @@
   .side-menu .top-menu {
     display: none;
   }
-  .side-menu .fl-menu {
+  .side-menu .full-menu {
     visibility: hidden;
     opacity: 0;
+    top: 0;
+    left: -160px;
+    transition: 0.5s !important;
   }
   .side-menu .short-menu {
     visibility: visible;
@@ -806,6 +817,24 @@ template {
 .links-container .links-rows:hover .hide-icon {
   opacity: 1;
   transition: 0.3s;
+}
+
+.menu-container {
+  position: absolute;
+  width: 0px;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 500;
+  background-color: #333333;
+}
+
+.cont-size-fl {
+  width: 160px;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
 }
 
 .inner-wallet {

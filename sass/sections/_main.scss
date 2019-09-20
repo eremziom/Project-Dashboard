@@ -121,3 +121,21 @@
     }
   }
 }
+
+.menu-container {
+  position: absolute;
+  width: 0px;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 500;
+  background-color: $color-sidebar;
+}
+
+.cont-size-fl {
+  width: 160px;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+}

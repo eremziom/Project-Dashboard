@@ -10,9 +10,12 @@
       display: none;
     }
 
-    .fl-menu {
+    .full-menu {
       visibility: hidden;
       opacity: 0;
+      top: 0;
+      left: -160px;
+      transition: 0.5s !important;
     }
 
     .short-menu {
