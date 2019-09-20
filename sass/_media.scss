@@ -29,17 +29,20 @@
 
 @media (max-width: 1024px) {
   .data-container {
-    width: 95%
+    width: 95%;
   }
 }
 
 @media (min-width: 768px) {
-
   .side-menu {
     width: 160px;
 
     .short-menu {
       display: none;
     }
+  }
+
+  .navbar-top {
+    justify-content: flex-end;
   }
 }

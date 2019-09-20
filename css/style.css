@@ -6,6 +6,10 @@
   visibility: hidden;
 }
 
+.size {
+  width: 160px !important;
+}
+
 @media (max-width: 767px) {
   .data-table {
     -ms-flex-direction: column;
@@ -43,6 +47,10 @@
   }
   .side-menu .short-menu {
     display: none;
+  }
+  .navbar-top {
+    -ms-flex-pack: end;
+        justify-content: flex-end;
   }
 }
 
@@ -395,6 +403,7 @@ template {
 .container .side-container {
   -ms-flex: 1 0 0px;
       flex: 1 0 0;
+  position: relative;
 }
 
 .container .main-container {
@@ -441,11 +450,8 @@ template {
 }
 
 .navbar-top {
-  text-align: right;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
   list-style: none;
   text-decoration: none;
   margin-top: 0;
