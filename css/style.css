@@ -15,18 +15,20 @@
   visibility: hidden !important;
   opacity: 0;
   right: -160px;
+  transition: 0.5s !important;
 }
 
 .show {
   visibility: visible !important;
   opacity: 1 !important;
   transition: 0.5s !important;
+  transition-delay: 0.2s !important;
   left: 0 !important;
 }
 
 .size-fl {
   width: 160px !important;
-  transition: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .size-sr {
@@ -35,11 +37,21 @@
   margin: 0;
 }
 
-/*.cont-size-sr {
-  width: 50px !important;
-  transition: 1s;
-  margin: 0;
-}*/
+.slide {
+  margin-left: 110px !important;
+  transition: 0.5s;
+  transition-delay: 0.3s !important;
+}
+
+.cont-size-fl {
+  width: 160px !important;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+  top: 0;
+  left: 0;
+  transition-delay: 0.2s !important;
+}
+
 @media (max-width: 767px) {
   .data-table {
     -ms-flex-direction: column;
@@ -56,10 +68,13 @@
     opacity: 0;
     top: 0;
     left: -160px;
-    transition: 0.5s !important;
+    transition: 0.5s;
+    transition-delay: 0.2s;
   }
   .side-menu .short-menu {
     visibility: visible;
+    transition: 0.5s;
+    transition-delay: 0.5s !important;
   }
 }
 
@@ -491,6 +506,8 @@ template {
   text-decoration: none;
   margin-top: 0;
   margin: 0;
+  transition: 0.5s;
+  transition-delay: 0.2s;
 }
 
 .navbar-top a {
@@ -828,13 +845,7 @@ template {
   height: 100%;
   z-index: 500;
   background-color: #333333;
-}
-
-.cont-size-fl {
-  width: 160px;
-  transition: 0.5s;
-  top: 0;
-  left: 0;
+  transition-delay: 0.2s;
 }
 
 .inner-wallet {

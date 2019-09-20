@@ -14,16 +14,19 @@ function menuSwitch(hamb) {
   const fullMenu = document.querySelector('.fl-menu');
   const contMenu = document.querySelector('.menu-container');
   const hambFl = document.querySelector('.ham-fl');
+  const navbar = document.querySelector('.navbar-top');
 
   if (hamb.classList.contains('ham-sr')){
     shortMenu.classList.toggle('hide');
     contMenu.classList.toggle('cont-size-fl');
     fullMenu.classList.toggle('show');
     hambFl.classList.toggle('ham-md');
+    navbar.classList.toggle('slide');
   } else if (hamb.classList.contains('ham-md')){
     shortMenu.classList.toggle('hide');
     contMenu.classList.toggle('cont-size-fl');
     fullMenu.classList.toggle('show');
     hambFl.classList.toggle('ham-md');
+    navbar.classList.toggle('slide');
   }
 }
