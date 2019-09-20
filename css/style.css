@@ -4,16 +4,21 @@
 
 .not-active {
   display: none !important;
+  opacity: 1;
 }
 
 .active {
   display: block !important;
-  opacity: 1;
-  transition: 1s;
+}
+
+.hide {
+  visibility: hidden !important;
 }
 
 .show {
-  visibility: hidden;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: 0.5s !important;
 }
 
 .size-fl {
@@ -25,7 +30,6 @@
   width: 50px !important;
   transition: 0.2s;
   margin: 0;
-  opacity: 1;
 }
 
 @media (max-width: 767px) {
@@ -39,11 +43,12 @@
   .side-menu .top-menu {
     display: none;
   }
-  .side-menu .full-menu {
-    display: none;
+  .side-menu .fl-menu {
+    visibility: hidden;
+    opacity: 0;
   }
   .side-menu .short-menu {
-    display: block;
+    visibility: visible;
   }
 }
 
@@ -65,7 +70,7 @@
     min-width: 160px;
   }
   .side-menu .short-menu {
-    display: none;
+    visibility: hidden;
   }
   .navbar-top {
     -ms-flex-pack: end;

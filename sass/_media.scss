@@ -10,12 +10,14 @@
       display: none;
     }
 
-    .full-menu {
-      display: none;
+    .fl-menu {
+      visibility: hidden;
+      opacity: 0;
     }
 
     .short-menu {
-      display: block;
+      //display: block;
+      visibility: visible;
     }
   }
 }
@@ -39,7 +41,7 @@
     min-width: 160px;
 
     .short-menu {
-      display: none;
+      visibility: hidden;
     }
   }
 

@@ -33,7 +33,26 @@ for(let hamb of hamburgers){
     e.preventDefault();
     hamb = this;
     console.log('hamb to', hamb);
-    menuSwitch(hamb);
-
+    //menuSwitch(hamb);
+    menuSwitch2(hamb);
   });
+}
+
+function menuSwitch2(hamb) {
+
+  const sideBar = document.querySelector('.side-menu');
+  const shortMenu = document.querySelector('.sr-menu');
+  const fullMenu = document.querySelector('.fl-menu');
+
+  if (hamb.classList.contains('ham-sr')){
+    shortMenu.classList.toggle('hide');
+    sideBar.classList.add('size-fl');
+    sideBar.classList.remove('size-sr');;
+    fullMenu.classList.toggle('show');
+  } else if (hamb.classList.contains('ham-fl')){
+    shortMenu.classList.toggle('hide');
+    sideBar.classList.remove('size-fl');
+    sideBar.classList.add('size-sr');
+    fullMenu.classList.toggle('show');
+  }
 }
